@@ -3,6 +3,8 @@ import BootScene from './scenes/Boot';
 import BootMenu from './scenes/BootMenu';
 import PlayerScene from './scenes/examples/PlayerScene';
 import MushroomScene from './scenes/examples/MushroomScene';
+import SpinnerScene from './scenes/examples/SpinnerScene';
+import EyesScene from './scenes/examples/EyesScene';
 
 
 let config = {
@@ -14,7 +16,9 @@ let config = {
       BootScene,
       BootMenu,
       MushroomScene,
-      PlayerScene
+      SpinnerScene,
+      PlayerScene,
+      EyesScene
     ]
 };
 

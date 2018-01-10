@@ -1,9 +1,11 @@
 class BootMenu extends Phaser.Scene {
-  constructor () {
-    super({
-      key: 'BootMenu'
-    })
-  }
+
+    constructor () {
+        
+        super({
+          key: 'BootMenu'
+        })
+    }
 
   create () {
     let config = {
@@ -23,7 +25,7 @@ class BootMenu extends Phaser.Scene {
     config = {
       x: 100,
       y: 180,
-      text: '[A] Spinning mushroom\n[B] Player Demo (input)',
+      text: '[A] Spinning mushroom\n[B] Player Demo (input)\n[C] Spinner Demo (input)\n[D] Eyes Demo (input)',
       style: {
         font: '48px Arial',
         fill: '#ff00ff',
@@ -34,7 +36,9 @@ class BootMenu extends Phaser.Scene {
 
     this.input = [
       {key: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A), scene: 'MushroomScene'},
-      {key: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.B), scene: 'PlayerScene'}
+      {key: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.B), scene: 'PlayerScene'},
+      {key: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.C), scene: 'SpinnerScene'},
+      {key: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D), scene: 'EyesScene'}
     ]
   }
 

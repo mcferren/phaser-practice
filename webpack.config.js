@@ -31,7 +31,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({ name: 'vendor'/* chunkName= */, filename: 'vendor.bundle.js'/* filename= */}),
     new BrowserSyncPlugin({
       host: process.env.IP || 'localhost',
-      port: process.env.PORT || 3000,
+      port: process.env.PORT || 4000,
       server: {
         baseDir: ['./', './build']
       }
